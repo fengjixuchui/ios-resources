@@ -8,7 +8,7 @@ Official references:
 - [ARMv8 Architecture Reference Manual](https://developer.arm.com/docs/ddi0487/latest) (long)
 - [ARM A-Profile Exploration tools](https://developer.arm.com/products/architecture/cpu-architecture/a-profile/exploration-tools) (same as above, but in machine readable form)
 - [ARM System Architecture Software Standards](https://developer.arm.com/architectures/system-architectures/software-standards) (ABIs, extensions, etc.)
-- [Clang Pointer Authentication ABI](https://github.com/apple/llvm-project/blob/apple/master/clang/docs/PointerAuthentication.rst)
+- [Clang Pointer Authentication ABI](https://github.com/apple/llvm-project/blob/apple/main/clang/docs/PointerAuthentication.rst)
 
 My own doing:
 
@@ -17,6 +17,7 @@ My own doing:
 <!-- TODO: something about C++ vtables -->
 <!-- TODO: something about symbol stubs -->
 
+<table><tr><td>
 Note on ARM documents:
 
 Both infocenter.arm.com and developer.arm.com are outright nightmares to navigate, and search engines don't help either. But if you have any ARM document as a PDF and want to check for a newer version, there is a neat trick. At the bottom of any page of the PDF, you should have a document identifier like so:
@@ -26,6 +27,7 @@ Both infocenter.arm.com and developer.arm.com are outright nightmares to navigat
 That should have the form `ARM XXX ddddX.x`. Take the three letters and following four digits (in this case, `DDI0406`) and construct an URL like so:  
 `https://developer.arm.com/docs/XXXdddd/latest`  
 (In this case, `https://developer.arm.com/docs/DDI0406/latest`.)
+</td></tr></table>
 
 ## Internals
 
@@ -95,14 +97,18 @@ That should have the form `ARM XXX ddddX.x`. Take the three letters and followin
 - Ramtin Amin - [Lightning Connector](http://ramtin-amin.fr/#tristar)
 - Ramtin Amin - [NVMe NAND Storage](http://ramtin-amin.fr/#nvmepcie)
 - Ramtin Amin - [iPhone PCIe (dumping the 6s BootROM)](http://ramtin-amin.fr/#nvmedma)
+- Nyan Satan - [Apple Lightning](https://nyansatan.github.io/lightning/)
 
 **SEP**
 
 - Tarjei Mandt, Mathew Solnik, David Wang - [Demystifying the  Secure Enclave Processor](https://www.blackhat.com/docs/us-16/materials/us-16-Mandt-Demystifying-The-Secure-Enclave-Processor.pdf)
+- David Wang, Chris Wade - [SEPOS: A Guided Tour](https://data.hackinn.com/ppt/2018%E8%85%BE%E8%AE%AF%E5%AE%89%E5%85%A8%E5%9B%BD%E9%99%85%E6%8A%80%E6%9C%AF%E5%B3%B0%E4%BC%9A/SEPOS%EF%BC%9AA%20Guided%20Tour.pdf)
+- windknown - [Attack Secure Boot of SEP](https://github.com/windknown/presentations/blob/master/Attack_Secure_Boot_of_SEP.pdf)
 
 **Bootloader**
 
 - a1exdandy - [Technical analysis of the checkm8 exploit](https://habr.com/en/company/dsec/blog/472762/)
+- Jonathan Levin - [\*OS: iBoot](http://newosxbook.com/bonus/iBoot.pdf)
 
 ## Write-Ups
 
@@ -138,6 +144,11 @@ That should have the form `ARM XXX ddddX.x`. Take the three letters and followin
 - Samuel Groß - Remote iPhone Exploitation (Parts [One](https://googleprojectzero.blogspot.com/2020/01/remote-iphone-exploitation-part-1.html), [Two](https://googleprojectzero.blogspot.com/2020/01/remote-iphone-exploitation-part-2.html) and [Three](https://googleprojectzero.blogspot.com/2020/01/remote-iphone-exploitation-part-3.html))
 - Siguza - [cuck00](https://siguza.github.io/cuck00/)
 - jsherma100 - [used_sock](https://jsherman212.github.io/used_sock/)
+- Samuel Groß - [Fuzzing ImageIO](https://googleprojectzero.blogspot.com/2020/04/fuzzing-imageio.html)
+- Siguza - [Psychic Paper](https://siguza.github.io/psychicpaper/)
+- Brandon Azad - [One Byte to rule them all](https://googleprojectzero.blogspot.com/2020/07/one-byte-to-rule-them-all.html)
+- Brandon Azad - [The core of Apple is PPL: Breaking the XNU kernel's kernel](https://googleprojectzero.blogspot.com/2020/07/the-core-of-apple-is-ppl-breaking-xnu.html)
+- Ian Beer - [An iOS zero-click radio proximity exploit odyssey](https://googleprojectzero.blogspot.com/2020/12/an-ios-zero-click-radio-proximity.html)
 
 ## Other Lists
 
@@ -145,3 +156,11 @@ That should have the form `ARM XXX ddddX.x`. Take the three letters and followin
 - Google Project Zero - [All the bugs Ian Beer has killed](https://bugs.chromium.org/p/project-zero/issues/list?can=1&q=reporter:ianbeer@google.com&sort=-closed&num=99999&colspec=ID%20Status%20Closed%20Reporter%20Methodology%20Summary)
 - Google Project Zero - [All the bugs Brandon Azad has killed](https://bugs.chromium.org/p/project-zero/issues/list?can=1&q=reporter:bazad@google.com&sort=-closed&num=99999&colspec=ID%20Status%20Closed%20Reporter%20Methodology%20Summary)
 - Google Project Zero - [All the bugs Ned Williamson has killed](https://bugs.chromium.org/p/project-zero/issues/list?can=1&q=reporter:nedwill@google.com&sort=-closed&num=99999&colspec=ID%20Status%20Closed%20Reporter%20Methodology%20Summary)
+- Google Project Zero - [A survey of recent iOS kernel exploits](https://googleprojectzero.blogspot.com/2020/06/a-survey-of-recent-ios-kernel-exploits.html)
+
+## Community
+
+"Hack Different" is a Discord server about hacking, reverse engineering and development loosely on and around Apple platforms.  
+It has a relaxed atmosphere and is a great place to hang out and connect with fellow tinkerers and enthusiasts.
+
+[![Hack Different](https://discordapp.com/api/guilds/779134930265309195/widget.png?style=banner2)](https://discord.gg/NAxRYvysuc)
